@@ -23,8 +23,8 @@ jobs:
       apellidos: "Romero Gutierrez" # g.2
       edad: "31"                    # g.3
     
-      user: ${{secrets.USER}}
-      password: ${{secrets.PASSWORD}}
+      user: ${{ secrets.USER }}
+      password: ${{ secrets.PASSWORD }}
 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -56,6 +56,6 @@ jobs:
       # J) TERCER STEP: USER Y PASSWORD
       - name: variables de entorno secretas
         run: |
-          echo "El usuario es: ${{env.USER}}"
-          echo "La contraseña es: ${{env.PASSWORD}}"
+          echo "El usuario es: ${{ secrets.USER }}"
+          echo "La contraseña es: ${{ secrets.PASSWORD }}"
 
