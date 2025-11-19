@@ -62,3 +62,11 @@ jobs:
       - name: variables abiertas
         run: |
           echo "Versión de mi proyecto: ${{ vars.VERSION_DE_MI_PROYECTO }}"
+
+      # QUINTO STEP :
+      - name: variables abiertas (como variables)
+        run: |
+          echo "nombres: $nombres"
+          echo "apellidos: $apellidos"
+          echo "edad: $edad"
+          echo "versión de mi proyecto: ${{ vars.VERSION_DE_MI_PROYECTO }}"
