@@ -45,3 +45,7 @@ jobs:
           echo "Nombres: $nombres"
           echo "Apellidos: $apellidos"
           echo "Edad: $edad"
+      
+      # i) SEGUNDO STEP: DATOS GENERALES
+      - name: datos generales
+        run: echo "carrera de ingeniería de sistemas"
