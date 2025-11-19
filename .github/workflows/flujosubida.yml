@@ -26,7 +26,6 @@ jobs:
       user: ${{ secrets.USER }}
       password: ${{ secrets.PASSWORD }}
 
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -59,3 +58,7 @@ jobs:
           echo "El usuario es: ${{ secrets.USER }}"
           echo "La contraseña es: ${{ secrets.PASSWORD }}"
 
+      # l) CUARTO STEP: VARIABLE ABIERTA
+      - name: variables abiertas
+        run: |
+          echo "Versión de mi proyecto: ${{ vars.version_de_mi_proyecto }}"
